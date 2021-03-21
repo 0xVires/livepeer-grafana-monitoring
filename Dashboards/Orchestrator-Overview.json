@@ -62,7 +62,7 @@
       "pluginVersion": "7.4.3",
       "targets": [
         {
-          "expr": "sum(deriv(livepeer_ticket_value_recv[1d])*60*60*24)/10^9",
+          "expr": "sum(rate(livepeer_ticket_value_recv[1d])*60*60*24)/10^9",
           "hide": false,
           "instant": true,
           "interval": "",
@@ -1319,5 +1319,5 @@
   "timezone": "",
   "title": "Orchestrator Overview",
   "uid": "71b6OZ0Gz",
-  "version": 8
+  "version": 11
 }
